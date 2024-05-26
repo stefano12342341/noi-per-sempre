@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#heart {
+  display: none;
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  margin-top: 20%;
+}
+</style>
+</head>
+<body>
+
+<input type="password" id="password" placeholder="Inserisci la password">
+<button onclick="showHeart()">Invia</button>
+
+<div id="heart">❤️ Stefano + Elena ❤️</div>
+
+<script>
+function showHeart() {
+  var password = document.getElementById("password").value;
+  if(password == "ti amo") {
+    document.getElementById("heart").style.display = "block";
+  } else {
+    alert("Password errata!");
+  }
+}
+</script>
+
+</body>
+</html>
